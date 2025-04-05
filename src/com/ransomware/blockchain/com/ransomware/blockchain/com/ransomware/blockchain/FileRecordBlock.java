@@ -2,14 +2,14 @@ package com.ransomware.blockchain;
 
 import java.security.PublicKey;
 
-public class Block {
+public class FileRecordBlock {
     private String fileHash;
     private String previousHash;
     private String signature;
     private String validatorId;
     private long timestamp;
 
-    public Block(String fileHash, String previousHash, Validator validator) throws Exception {
+    public FileRecordBlock(String fileHash, String previousHash, Validator validator) throws Exception {
         this.fileHash = fileHash;
         this.previousHash = previousHash;
         this.timestamp = System.currentTimeMillis();
